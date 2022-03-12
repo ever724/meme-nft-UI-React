@@ -1,0 +1,74 @@
+
+.react-multi-carousel-list{display:flex;align-items:center;overflow:hidden;position:relative; width: 1050px;}
+.react-multi-carousel-track{
+    list-style:none;padding:0;margin:0;display:flex;flex-direction:row;
+    position:relative;transform-style:preserve-3d;backface-visibility:hidden;will-change:transform,transition
+}
+.react-multiple-carousel__arrow{
+    position:absolute;outline:0;transition:all .5s;border-radius:35px;z-index:1000;border:0;background:rgba(0,0,0,0.5);
+    min-width:43px;min-height:43px;opacity:1;cursor:pointer
+}
+.react-multiple-carousel__arrow:hover{background:rgba(0,0,0,0.8)}
+.react-multiple-carousel__arrow::before{
+    font-size:20px;color:#fff;
+    display:block;
+    font-family:revicons;
+    text-align:center;
+    z-index:2;
+    position:relative
+}
+.react-multiple-carousel__arrow:disabled{cursor:default;background:rgba(0,0,0,0.5)}
+.react-multiple-carousel__arrow--left{left:calc(4% + 1px)}
+.react-multiple-carousel__arrow--left::before{content:"\e824"}
+.react-multiple-carousel__arrow--right{right:calc(4% + 1px)}
+.react-multiple-carousel__arrow--right::before{content:"\e825"}
+.react-multi-carousel-dot-list{
+    position:absolute;
+    bottom:-27px;
+    display:flex;
+    left:0;right:0;
+    justify-content:left;
+    margin:auto;padding:0;
+    margin:0;
+    list-style:none;
+    text-align:center
+}
+.react-multi-carousel-dot button{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: all .5s;
+    padding: 0;
+    margin: 0;
+    margin-right: 16px;
+    margin-left: 9px;
+    cursor: pointer;
+    border: solid 3px rgba(0,0,0,0);
+}
+
+.react-multi-carousel-dot button:hover{
+    background-color: #22B171;
+}
+
+.react-multi-carousel-dot--active button{
+    background: rgba(0,0,0,0);
+    border: solid 3px #22B171;
+}
+.react-multi-carousel-item{
+    transform-style:preserve-3d;
+    backface-visibility:hidden;
+    width:926px !important;
+    height: 500px !important;
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){
+    .react-multi-carousel-item{flex-shrink:0 !important}
+    .react-multi-carousel-track{overflow:visible !important}
+}
+
+.home-slider{
+    position: relative;
+    display: block;
+}

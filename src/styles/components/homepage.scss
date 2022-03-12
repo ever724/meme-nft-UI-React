@@ -1,0 +1,30 @@
+.main {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.slider-features {
+    margin-left: 20px;
+}
+
+.nft-content {
+    margin-top: 100px;
+}
+
+.available-nfts-title {
+    padding-left: 20px;
+}
+
+.available-nfts-title {
+    transition-duration: .5s;
+    transition-property: color,font-weight;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.nfts {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
